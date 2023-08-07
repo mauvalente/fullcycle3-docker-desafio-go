@@ -8,4 +8,4 @@ Command to download Image from Docker Hub
 
 To run the application execute:
 
-```docker run mauvalente/fullcycle3-desafio1-golang:latest .```
+```docker run mauvalente/fullcycle3-desafio1-golang:latest```
