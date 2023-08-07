@@ -9,9 +9,11 @@ RUN go env -w GO111MODULE=auto && go build -o fullcycle-rocks .
 
 FROM scratch
 
-COPY --from=build /app/fullcycle-rocks /bin
+WORKDIR /app
 
-CMD fullcycle-rocks
+COPY --from=build /app/fullcycle-rocks /app
+
+CMD ["/app/fullcycle-rocks"]
 
 
 
